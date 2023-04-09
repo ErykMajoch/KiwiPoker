@@ -1,0 +1,2 @@
+add_executable(KiwiPokerEngine main.cpp)
+target_compile_features(KiwiPokerEngine PRIVATE cxx_std_17)
