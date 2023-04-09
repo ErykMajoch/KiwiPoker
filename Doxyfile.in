@@ -1,2 +1,14 @@
-OUTPUT_DIRECTORY       = @CMAKE_CURRENT_SOURCE_DIR@/docs/
+PROJECT_NAME           = Kiwi Poker - A Texas Holdem' Poker Engine
+PROJECT_NUMBER         = @VERSION@
+
 INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/src/
+
+OUTPUT_DIRECTORY       = @CMAKE_CURRENT_SOURCE_DIR@/docs/
+OUTPUT_LANGUAGE        = English
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+SHORT_NAMES            = NO
