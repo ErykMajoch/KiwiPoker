@@ -25,7 +25,3 @@ std::string Card::getSuit() {
 std::string Card::toString() {
     return m_Rank + " of " + m_Suit;
 }
-
-int hello () {
-    return 0;
-}

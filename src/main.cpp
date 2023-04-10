@@ -1,8 +1,10 @@
 #include <iostream>
-#include "card.h"
+#include "deck.h"
 
 int main() {
-    Card a = Card(529159);
-    std::cout << a.toString() << std::endl;
+    Deck d = Deck();
+    for (Card c : d.drawCards(52)) {
+        std::cout << c.toString() << "\n";
+    }
     return 0;
 }

@@ -42,7 +42,7 @@ const std::map<int, std::string> suitMap = {
 class Card
 {
 public:
-    Card(int _card);
+    explicit Card(int _card);
     std::string getRank();
     std::string getSuit();
 
