@@ -1,7 +1,7 @@
 PROJECT_NAME           = Kiwi Poker - A Texas Holdem' Poker Engine
 PROJECT_NUMBER         = @VERSION@
 
-INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/src/
+INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/src/ @CMAKE_CURRENT_SOURCE_DIR@/include/
 
 OUTPUT_DIRECTORY       = @CMAKE_CURRENT_SOURCE_DIR@/docs/
 OUTPUT_LANGUAGE        = English

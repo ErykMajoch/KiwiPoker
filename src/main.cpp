@@ -1,6 +1,8 @@
 #include <iostream>
+#include "card.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Card a = Card(529159);
+    std::cout << a.toString() << std::endl;
     return 0;
 }

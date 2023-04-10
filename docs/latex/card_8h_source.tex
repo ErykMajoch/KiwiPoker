@@ -1,0 +1,60 @@
+\hypertarget{card_8h_source}{}\doxysection{card.\+h}
+\label{card_8h_source}\index{/home/melon/Documents/KiwiPoker/include/card.h@{/home/melon/Documents/KiwiPoker/include/card.h}}
+\mbox{\hyperlink{card_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ As\ I'm\ planning\ to\ use\ the\ Cactus\ Kev\ 5\ card\ evaluator,\ I\ need}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ to\ use\ his\ card\ represenantion\ in\ an\ 32\ bit\ integer:}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ +-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ |xxxbbbbb|bbbbbbbb|cdhsrrrr|xxpppppp|}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ +-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ p\ =\ prime\ number,\ r\ =\ rank\ of\ card}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ cdhs\ =\ suit\ of\ card,\ b\ =\ bit\ turned\ on\ depending\ on\ rank\ of\ card}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{const}\ std::map<int,\ std::string>\ \mbox{\hyperlink{card_8h_aebb3b6b521be7724e331a2a7c2188fcb}{rankMap}}\ =\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \{1,\ \textcolor{stringliteral}{"{}Two"{}}\},}
+\DoxyCodeLine{00019\ \ \ \ \ \{2,\ \textcolor{stringliteral}{"{}Three"{}}\},}
+\DoxyCodeLine{00020\ \ \ \ \ \{4,\ \textcolor{stringliteral}{"{}Four"{}}\},}
+\DoxyCodeLine{00021\ \ \ \ \ \{8,\ \textcolor{stringliteral}{"{}Five"{}}\},}
+\DoxyCodeLine{00022\ \ \ \ \ \{16,\ \textcolor{stringliteral}{"{}Six"{}}\},}
+\DoxyCodeLine{00023\ \ \ \ \ \{32,\ \textcolor{stringliteral}{"{}Seven"{}}\},}
+\DoxyCodeLine{00024\ \ \ \ \ \{64,\ \textcolor{stringliteral}{"{}Eight"{}}\},}
+\DoxyCodeLine{00025\ \ \ \ \ \{128,\ \textcolor{stringliteral}{"{}Nine"{}}\},}
+\DoxyCodeLine{00026\ \ \ \ \ \{256,\ \textcolor{stringliteral}{"{}Ten"{}}\},}
+\DoxyCodeLine{00027\ \ \ \ \ \{512,\ \textcolor{stringliteral}{"{}Jack"{}}\},}
+\DoxyCodeLine{00028\ \ \ \ \ \{1024,\ \textcolor{stringliteral}{"{}Queen"{}}\},}
+\DoxyCodeLine{00029\ \ \ \ \ \{2048,\ \textcolor{stringliteral}{"{}King"{}}\},}
+\DoxyCodeLine{00030\ \ \ \ \ \{4096,\ \textcolor{stringliteral}{"{}Ace"{}}\}}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{const}\ std::map<int,\ std::string>\ \mbox{\hyperlink{card_8h_a3c68b754fb6fda87fea7239d96bd9a45}{suitMap}}\ =\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \{1,\ \textcolor{stringliteral}{"{}Spades"{}}\},}
+\DoxyCodeLine{00036\ \ \ \ \ \{2,\ \textcolor{stringliteral}{"{}Hearts"{}}\},}
+\DoxyCodeLine{00037\ \ \ \ \ \{4,\ \textcolor{stringliteral}{"{}Diamonds"{}}\},}
+\DoxyCodeLine{00038\ \ \ \ \ \{8,\ \textcolor{stringliteral}{"{}Clubs"{}}\}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCard}{Card}}}
+\DoxyCodeLine{00043\ \{}
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{classCard}{Card}}(\textcolor{keywordtype}{int}\ \_card);}
+\DoxyCodeLine{00046\ \ \ \ \ std::string\ \mbox{\hyperlink{classCard_a98b2a0ffc8233211843305fc82bcf5af}{getRank}}();}
+\DoxyCodeLine{00047\ \ \ \ \ std::string\ \mbox{\hyperlink{classCard_a2cf7c953656b9813e6c6fe76d0f88f14}{getSuit}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ std::string\ \mbox{\hyperlink{classCard_afac43caae25a6dfaff197ebdcea28f89}{toString}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{classCard_a2914c3978ed065d99ec335bc6788e060}{\string~Card}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_Card\ =\ 0;}
+\DoxyCodeLine{00055\ \ \ \ \ std::string\ m\_Rank;}
+\DoxyCodeLine{00056\ \ \ \ \ std::string\ m\_Suit;}
+\DoxyCodeLine{00057\ \};}
+
+\end{DoxyCode}

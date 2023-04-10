@@ -1,0 +1,84 @@
+\hypertarget{arrays_8h}{}\doxysection{/home/melon/\+Documents/\+Kiwi\+Poker/include/arrays.h File Reference}
+\label{arrays_8h}\index{/home/melon/Documents/KiwiPoker/include/arrays.h@{/home/melon/Documents/KiwiPoker/include/arrays.h}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned short \mbox{\hyperlink{arrays_8h_a2e558e6b2802a15ee186eb7713282ebe}{flushes}} \mbox{[}$\,$\mbox{]}
+\item 
+unsigned short \mbox{\hyperlink{arrays_8h_a8627b8411d97b0b771a04c559ab660bc}{unique5}} \mbox{[}$\,$\mbox{]}
+\item 
+unsigned short \mbox{\hyperlink{arrays_8h_a62d03db23cfa2404a7821e093e84c92d}{hash\+\_\+adjust}} \mbox{[}$\,$\mbox{]}
+\item 
+unsigned short \mbox{\hyperlink{arrays_8h_acb08e461fb66d0e804f25639d4091318}{hash\+\_\+values}} \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{arrays_8h_ae26c6770189fa98dd0f5d74039ed6388}{primes}} \mbox{[}$\,$\mbox{]} = \{ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41 \}
+\item 
+int \mbox{\hyperlink{arrays_8h_a62871c35f991d11131d4329812876461}{perm7}} \mbox{[}21\mbox{]}\mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{arrays_8h_a2e558e6b2802a15ee186eb7713282ebe}\label{arrays_8h_a2e558e6b2802a15ee186eb7713282ebe}} 
+\index{arrays.h@{arrays.h}!flushes@{flushes}}
+\index{flushes@{flushes}!arrays.h@{arrays.h}}
+\doxysubsubsection{\texorpdfstring{flushes}{flushes}}
+{\footnotesize\ttfamily unsigned short flushes\mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{arrays_8h_a62d03db23cfa2404a7821e093e84c92d}\label{arrays_8h_a62d03db23cfa2404a7821e093e84c92d}} 
+\index{arrays.h@{arrays.h}!hash\_adjust@{hash\_adjust}}
+\index{hash\_adjust@{hash\_adjust}!arrays.h@{arrays.h}}
+\doxysubsubsection{\texorpdfstring{hash\_adjust}{hash\_adjust}}
+{\footnotesize\ttfamily unsigned short hash\+\_\+adjust\mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{arrays_8h_acb08e461fb66d0e804f25639d4091318}\label{arrays_8h_acb08e461fb66d0e804f25639d4091318}} 
+\index{arrays.h@{arrays.h}!hash\_values@{hash\_values}}
+\index{hash\_values@{hash\_values}!arrays.h@{arrays.h}}
+\doxysubsubsection{\texorpdfstring{hash\_values}{hash\_values}}
+{\footnotesize\ttfamily unsigned short hash\+\_\+values\mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{arrays_8h_a62871c35f991d11131d4329812876461}\label{arrays_8h_a62871c35f991d11131d4329812876461}} 
+\index{arrays.h@{arrays.h}!perm7@{perm7}}
+\index{perm7@{perm7}!arrays.h@{arrays.h}}
+\doxysubsubsection{\texorpdfstring{perm7}{perm7}}
+{\footnotesize\ttfamily int perm7\mbox{[}21\mbox{]}\mbox{[}5\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 2,\ 3,\ 4\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 2,\ 3,\ 5\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 2,\ 3,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 2,\ 4,\ 5\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 2,\ 4,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 2,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 3,\ 4,\ 5\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 3,\ 4,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 3,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 1,\ 4,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 2,\ 3,\ 4,\ 5\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 2,\ 3,\ 4,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 2,\ 3,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 2,\ 4,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 0,\ 3,\ 4,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 1,\ 2,\ 3,\ 4,\ 5\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 1,\ 2,\ 3,\ 4,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 1,\ 2,\ 3,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 1,\ 2,\ 4,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 1,\ 3,\ 4,\ 5,\ 6\ \},}
+\DoxyCodeLine{\ \ \ \ \{\ 2,\ 3,\ 4,\ 5,\ 6\ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{arrays_8h_ae26c6770189fa98dd0f5d74039ed6388}\label{arrays_8h_ae26c6770189fa98dd0f5d74039ed6388}} 
+\index{arrays.h@{arrays.h}!primes@{primes}}
+\index{primes@{primes}!arrays.h@{arrays.h}}
+\doxysubsubsection{\texorpdfstring{primes}{primes}}
+{\footnotesize\ttfamily int primes\mbox{[}$\,$\mbox{]} = \{ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41 \}}
+
+\mbox{\Hypertarget{arrays_8h_a8627b8411d97b0b771a04c559ab660bc}\label{arrays_8h_a8627b8411d97b0b771a04c559ab660bc}} 
+\index{arrays.h@{arrays.h}!unique5@{unique5}}
+\index{unique5@{unique5}!arrays.h@{arrays.h}}
+\doxysubsubsection{\texorpdfstring{unique5}{unique5}}
+{\footnotesize\ttfamily unsigned short unique5\mbox{[}$\,$\mbox{]}}
+

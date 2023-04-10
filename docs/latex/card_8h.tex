@@ -1,0 +1,68 @@
+\hypertarget{card_8h}{}\doxysection{/home/melon/\+Documents/\+Kiwi\+Poker/include/card.h File Reference}
+\label{card_8h}\index{/home/melon/Documents/KiwiPoker/include/card.h@{/home/melon/Documents/KiwiPoker/include/card.h}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCard}{Card}}
+\begin{DoxyCompactList}\small\item\em A wrapper class for the card representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::map$<$ int, std\+::string $>$ \mbox{\hyperlink{card_8h_aebb3b6b521be7724e331a2a7c2188fcb}{rank\+Map}}
+\begin{DoxyCompactList}\small\item\em A map from an integer to the rank. \end{DoxyCompactList}\item 
+const std\+::map$<$ int, std\+::string $>$ \mbox{\hyperlink{card_8h_a3c68b754fb6fda87fea7239d96bd9a45}{suit\+Map}}
+\begin{DoxyCompactList}\small\item\em A map from an integer to the suit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{card_8h_aebb3b6b521be7724e331a2a7c2188fcb}\label{card_8h_aebb3b6b521be7724e331a2a7c2188fcb}} 
+\index{card.h@{card.h}!rankMap@{rankMap}}
+\index{rankMap@{rankMap}!card.h@{card.h}}
+\doxysubsubsection{\texorpdfstring{rankMap}{rankMap}}
+{\footnotesize\ttfamily const std\+::map$<$int, std\+::string$>$ rank\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{1,\ \textcolor{stringliteral}{"{}Two"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{2,\ \textcolor{stringliteral}{"{}Three"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{4,\ \textcolor{stringliteral}{"{}Four"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{8,\ \textcolor{stringliteral}{"{}Five"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{16,\ \textcolor{stringliteral}{"{}Six"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{32,\ \textcolor{stringliteral}{"{}Seven"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{64,\ \textcolor{stringliteral}{"{}Eight"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{128,\ \textcolor{stringliteral}{"{}Nine"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{256,\ \textcolor{stringliteral}{"{}Ten"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{512,\ \textcolor{stringliteral}{"{}Jack"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{1024,\ \textcolor{stringliteral}{"{}Queen"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{2048,\ \textcolor{stringliteral}{"{}King"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{4096,\ \textcolor{stringliteral}{"{}Ace"{}}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+A map from an integer to the rank. 
+
+\mbox{\Hypertarget{card_8h_a3c68b754fb6fda87fea7239d96bd9a45}\label{card_8h_a3c68b754fb6fda87fea7239d96bd9a45}} 
+\index{card.h@{card.h}!suitMap@{suitMap}}
+\index{suitMap@{suitMap}!card.h@{card.h}}
+\doxysubsubsection{\texorpdfstring{suitMap}{suitMap}}
+{\footnotesize\ttfamily const std\+::map$<$int, std\+::string$>$ suit\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{1,\ \textcolor{stringliteral}{"{}Spades"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{2,\ \textcolor{stringliteral}{"{}Hearts"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{4,\ \textcolor{stringliteral}{"{}Diamonds"{}}\},}
+\DoxyCodeLine{\ \ \ \ \{8,\ \textcolor{stringliteral}{"{}Clubs"{}}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+A map from an integer to the suit. 
+
