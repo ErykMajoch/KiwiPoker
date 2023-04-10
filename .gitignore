@@ -16,3 +16,6 @@ release/
 
 # VSCode
 .vscode/
+
+# CLion
+.idea/
