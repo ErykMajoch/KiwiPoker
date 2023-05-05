@@ -20,4 +20,4 @@ This project is also setup to automatically build documentation using Doxygen, w
 
 It will be build every time you build the project. To view the documentation, open `docs/html/index.html` in your browser.
 
-![](http://cbadge-instance/:CDashProjectName/:task/:GitHubRepoOwner/:GitHubRepoName/:tag)
+![http://cbadge-instance/:CDashProjectName/:task/:GitHubRepoOwner/:GitHubRepoName/:tag]
