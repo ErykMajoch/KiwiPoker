@@ -20,5 +20,4 @@ This project is also setup to automatically build documentation using Doxygen, w
 
 It will be build every time you build the project. To view the documentation, open `docs/html/index.html` in your browser.
 
-![Configure Status](http://cbadge-instance/:CDashProjectName/configure/:GitHubRepoOwner/:GitHubRepoName/:tag)
-![Build Status](http://cbadge-instance/:CDashProjectName/build/:GitHubRepoOwner/:GitHubRepoName/:tag)
+![Configure Status](http://cbadge-instance/:CDashProjectName/:GitCommitSHA/configure.svg)
