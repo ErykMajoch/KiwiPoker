@@ -1,4 +1,4 @@
-# Kiwi Poker
+# Kiwi Poker Engine
 ## A Texas Hold'em Poker Game Engine written in C++
 
 ### Building
